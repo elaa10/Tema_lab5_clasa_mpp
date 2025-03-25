@@ -21,7 +21,7 @@ public class MainFX extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("RepairShopWindow.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/RepairShopWindow.fxml"));
             Parent root = loader.load();
             ComputerRepairShopController ctrl = loader.getController();
             ctrl.setService(getService());

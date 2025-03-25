@@ -17,7 +17,7 @@ public class MainFXSpring extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("RepairShopWindow.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/RepairShopWindow.fxml"));
             Parent root = loader.load();
             ComputerRepairShopController ctrl = loader.getController();
             ctrl.setService(getService());
@@ -39,7 +39,7 @@ public class MainFXSpring extends Application {
 
     static ComputerRepairServices getService() throws ServicesException {
             // pentru configurare folosind XML
-           //ApplicationContext context=new ClassPathXmlApplicationContext("RepairShopConfig.xml");
+//           ApplicationContext context=new ClassPathXmlApplicationContext("/RepairShopConfig.xml");
 
             //pentru configurare folosind JavaConfig
             ApplicationContext context=new AnnotationConfigApplicationContext(RepairShopConfig.class);

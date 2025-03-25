@@ -12,18 +12,18 @@
     <constructor-arg value="ComputerRequests.txt"/>
 </bean>
 
-<bean id="requestsRepoJdbc" class="ro.mpp2025.repository.jdbc.ComputerRepairRequestJdbcRepository">
-    <constructor-arg ref="jdbcProps"/>
-</bean>
+<!--<bean id="requestsRepoJdbc" class="ro.mpp2025.repository.jdbc.ComputerRepairRequestJdbcRepository">-->
+<!--    <constructor-arg ref="jdbcProps"/>-->
+<!--</bean>-->
 
 <bean id="formsRepoFile" class="ro.mpp2025.repository.file.ComputerRepairedFormFileRepository">
     <constructor-arg value="RepairedForms.txt"/>
     <constructor-arg ref="requestsRepoFile"/>
 </bean>
 
-<bean id="formsRepoJdbc" class="ro.mpp2025.repository.jdbc.ComputerRepairedFormJdbcRepository">
-    <constructor-arg ref="jdbcProps"/>
-</bean>
+<!--<bean id="formsRepoJdbc" class="ro.mpp2025.repository.jdbc.ComputerRepairedFormJdbcRepository">-->
+<!--    <constructor-arg ref="jdbcProps"/>-->
+<!--</bean>-->
 
 <bean id="shopService" class="ro.mpp2025.services.ComputerRepairServices">
     <constructor-arg ref="requestsRepoFile"/>

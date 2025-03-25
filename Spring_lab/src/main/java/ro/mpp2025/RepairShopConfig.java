@@ -22,7 +22,7 @@ public class RepairShopConfig {
             System.out.println("Searching bd.config in directory " + ((new File(".")).getAbsolutePath()));
             props.load(new FileReader("bd.config"));
         } catch (IOException e) {
-            System.err.println("Configuration file bd.cong not found" + e);
+            System.err.println("Configuration file bd.config not found" + e);
         }
         return props;
     }
